@@ -1,0 +1,55 @@
+
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.github.mikesafonov'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencyManagement {
+    dependencies {
+        dependencySet(group:'org.junit.jupiter', version: '5.5.1') {
+            entry 'junit-jupiter-api'
+            entry 'junit-jupiter-engine'
+            entry 'junit-jupiter-params'
+        }
+        dependencySet(group:'org.junit.platform', version: '1.5.1') {
+            entry 'junit-platform-engine'
+            entry 'junit-platform-commons'
+        }
+    }
+}
+
+configurations {
+    compile.exclude module: 'spring-boot-starter-logging'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+    compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+
+    implementation 'org.apache.logging.log4j:log4j-web'
+
+
+    compileOnly "org.projectlombok:lombok"
+    annotationProcessor "org.projectlombok:lombok"
+
+    testImplementation("org.junit.jupiter:junit-jupiter:5.5.1")
+    testImplementation("org.mockito:mockito-core")
+}
+
+
+test {
+    useJUnitPlatform()
+}
