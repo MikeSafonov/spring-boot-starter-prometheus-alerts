@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "prometheus.alertmanager.endpoint.base",
+      "type": "java.lang.String",
+      "defaultValue": "/alert",
+      "description": "base url for POST request mapping for prometheus alert"
+    }
+  ]
+}
