@@ -12,8 +12,7 @@ import org.springframework.http.ResponseEntity;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-classes = WebApplicationWithoutNotificationService.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class NoAlertEndpointTest {
     @LocalServerPort
     private int port;

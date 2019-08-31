@@ -9,14 +9,15 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
 @SpringBootTest(
         properties = {"prometheus.alertmanager.endpoint.base=/alert2"},
-        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-        classes = WebApplication.class)
+        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@ActiveProfiles("service")
 class AlertEndpointWithCustomMappingTest {
     @LocalServerPort
     private int port;
