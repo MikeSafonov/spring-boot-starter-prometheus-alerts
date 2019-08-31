@@ -4,5 +4,5 @@ import com.github.mikesafonov.prometheus.alerts.starter.dto.AlertManagerNotifica
 
 public interface NotificationService {
 
-    void sendNotification(AlertManagerNotification notification);
+    void onNotification(AlertManagerNotification notification);
 }
