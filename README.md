@@ -18,9 +18,16 @@
 
 This is a starter for spring boot application witch catch alerts from [Prometheus Alertmanager](https://prometheus.io/docs/alerting/alertmanager/).
 
-The starter is available at: `...`
+The starter is available at `https://repo1.maven.org/maven2/` repository.
 
-Using gradle: `...`
+Using gradle: 
+    
+    repositories {
+        maven {url "https://repo1.maven.org/maven2/"}
+    }
+    dependencies {
+        implementation 'com.github.mikesafonov:spring-boot-starter-prometheus-alerts:1.0.0'
+    }
 
 The only thing you need to do after adding the dependency is to create a bean with implementation of `NotificationService` interface:
 
@@ -43,7 +50,7 @@ The following properties can be configured:
 
 You can build application using following command:
 
-    ./gradlew clean build
+    ./gradlew clean build -x signArchives
     
 #### Requirements:
 
