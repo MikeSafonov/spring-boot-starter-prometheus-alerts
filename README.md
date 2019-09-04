@@ -73,6 +73,10 @@ receivers:
     - url: http://<application-host>:<application-port>/alert
 ```
 
+## Usage example
+
+- [prometheus-telegram-alert](https://github.com/MikeSafonov/prometheus-telegram-alert)
+
 ## Contributing
 
 Feel free to contribute. 
