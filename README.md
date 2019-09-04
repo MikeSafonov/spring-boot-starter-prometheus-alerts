@@ -60,7 +60,7 @@ JDK >= 1.8
 
 You can run unit tests using following command:
 
-    ./grdlew test
+    ./gradlew test
 
 ### Alertmanager configuration
 
