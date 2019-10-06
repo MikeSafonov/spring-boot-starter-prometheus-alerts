@@ -1,4 +1,5 @@
 # spring-boot-starter-prometheus-alerts
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.mikesafonov/spring-boot-starter-prometheus-alerts.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.mikesafonov%22%20AND%20a:%22spring-boot-starter-prometheus-alerts%22)
 [![codecov](https://codecov.io/gh/MikeSafonov/spring-boot-starter-prometheus-alerts/branch/master/graph/badge.svg)](https://codecov.io/gh/MikeSafonov/spring-boot-starter-prometheus-alerts)
 ![Travis-CI](https://travis-ci.com/MikeSafonov/spring-boot-starter-prometheus-alerts.svg?branch=master)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
