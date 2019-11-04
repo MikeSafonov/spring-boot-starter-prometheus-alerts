@@ -1,7 +1,7 @@
 # spring-boot-starter-prometheus-alerts
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.mikesafonov/spring-boot-starter-prometheus-alerts.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.mikesafonov%22%20AND%20a:%22spring-boot-starter-prometheus-alerts%22)
 [![codecov](https://codecov.io/gh/MikeSafonov/spring-boot-starter-prometheus-alerts/branch/master/graph/badge.svg)](https://codecov.io/gh/MikeSafonov/spring-boot-starter-prometheus-alerts)
-![Travis-CI](https://travis-ci.com/MikeSafonov/spring-boot-starter-prometheus-alerts.svg?branch=master)
+[![Travis-CI](https://travis-ci.com/MikeSafonov/spring-boot-starter-prometheus-alerts.svg?branch=master)](https://travis-ci.com/MikeSafonov/spring-boot-starter-prometheus-alerts)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MikeSafonov_spring-boot-starter-prometheus-alerts&metric=alert_status)](https://sonarcloud.io/dashboard?id=MikeSafonov_spring-boot-starter-prometheus-alerts)
