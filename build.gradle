@@ -22,17 +22,6 @@ repositories {
 
 dependencyManagement {
     imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
-    dependencies {
-        dependencySet(group:"org.junit.jupiter", version: "5.5.2") {
-            entry "junit-jupiter-api"
-            entry "junit-jupiter-engine"
-            entry "junit-jupiter-params"
-        }
-        dependencySet(group:"org.junit.platform", version: "1.5.2") {
-            entry "junit-platform-engine"
-            entry "junit-platform-commons"
-        }
-    }
 }
 
 jar {
@@ -54,7 +43,6 @@ dependencies {
     annotationProcessor ("org.projectlombok:lombok")
 
     testImplementation ("org.springframework.boot:spring-boot-starter-test")
-    testImplementation ("org.junit.jupiter:junit-jupiter:5.5.2")
     testImplementation ("org.mockito:mockito-core")
     testImplementation ("org.assertj:assertj-core:3.14.0")
 }
