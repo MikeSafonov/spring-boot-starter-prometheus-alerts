@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AlertEndpoint {
     private final NotificationService notificationService;
 
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public void alert(@RequestBody AlertManagerNotification managerNotification) {
         log.debug("Notification: {}",managerNotification);
         notificationService.onNotification(managerNotification);
